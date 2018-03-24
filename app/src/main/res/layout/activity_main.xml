@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="proyect.my.of.example.miyuki.viewpager.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                app:tabTextColor="@android:color/holo_red_light"
+                app:tabSelectedTextColor="@android:color/white"
+                app:tabIndicatorColor="@android:color/holo_green_dark"
+                android:background="@android:color/holo_red_dark"
+                >
+
+            </android.support.design.widget.TabLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|end"
+            tools:layout_editor_absoluteY="47dp">
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
